@@ -1,0 +1,109 @@
+.contenedorcontacto {
+    display: flex;
+    justify-content: center;
+    gap: 300px; /* Ajusta este valor según tus necesidades */
+}
+
+.mapa, form {
+    width: 55%; /* Ajusta este valor según tus necesidades */
+}
+
+
+
+
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    width: 380px;
+    background-color: rgba(0, 0, 0, 0.485);
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+a{
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+h2{
+    color: #ffffff !important;
+    font-size: 35px;
+}
+
+label{
+    font-size: 15px;
+    color: #37cb41;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 2px solid #f0faf1;
+    color: #000000;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #000000;
+}
+.form-txt{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a{
+    color : #000000;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.enviar{
+    font-size: 16px;
+    color: #ffffff ;
+    border: 0  ;
+    border-radius: 25px;
+    background-color: #000000;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.902);
+    cursor: pointer;
+}
+
+.bnt:hover{
+    background-color: #000000;
+}
+
+@media screen and (max-width:1024px){
+    .contenedorcontacto {
+        flex-direction: column;
+        gap: 25px; /* Elimina el espacio entre los elementos cuando se apilan */
+    }
+    .mapa, form {
+        width: 100%;
+    }
+    form{
+        padding: 50px 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        text-align: center;
+    }
+        form input, form textarea {
+        width: 100%; /* Asegura que los campos de entrada y el área de texto ocupen todo el ancho disponible */
+        margin: 10px 0; /* Agrega un margen arriba y abajo para separar los campos */
+    }
+    input{
+        padding: 15px;
+    }
+}
